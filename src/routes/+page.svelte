@@ -1,8 +1,8 @@
 <script>
   let response;
-  const fetch = () => {
-    const res = fetch("https://cms.sghomedecor.com/api/products");
-    const data = res.json();
+  const fetch = async () => {
+    const res = await fetch("https://cms.sghomedecor.com/api/products");
+    const data = await res.json();
     response = data;
   };
 </script>
